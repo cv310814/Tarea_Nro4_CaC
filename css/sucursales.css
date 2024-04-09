@@ -16,9 +16,35 @@ header{
 }
   
 footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  margin-top: 10px;
- 
-}
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+   
+  }
+  .social-icons {
+      text-align: center;
+    }
+    
+    .social-icon {
+      margin: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .social-icon i {
+      background: rosybrown;
+      color: white;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    
+    /* Efecto al pasar el mouse sobre los iconos */
+    .social-icon:hover {
+      opacity: 0.7;
+    }
+    
