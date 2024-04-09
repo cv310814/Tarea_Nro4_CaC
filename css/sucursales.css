@@ -6,7 +6,6 @@ header{
     color: rosybrown;
 }
   
-
 .nav{
     background-color: gray;
     color: white;
@@ -14,13 +13,18 @@ header{
     padding: 5px;
     border-radius: 5px;
 }
+
+main section {
+    display: block;
+    text-align: center;
+}
+ 
   
 footer {
     background-color: black;
     color: white;
     text-align: center;
     margin-top: 10px;
-   
   }
   .social-icons {
       text-align: center;
@@ -47,4 +51,3 @@ footer {
     .social-icon:hover {
       opacity: 0.7;
     }
-    

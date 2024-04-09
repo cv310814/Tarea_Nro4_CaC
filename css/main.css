@@ -1,11 +1,24 @@
-h1{
+h1, h3{
     text-align: center;
 }
 header{
+    display: block;
     background-color: black;
     color: rosybrown;
 }
   
+nav {
+    display: block;
+    height: 45px;
+    text-align: left;
+}
+
+nav a{
+    display: inline-block;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
 
 .nav{
     background-color: gray;
@@ -14,13 +27,31 @@ header{
     padding: 5px;
     border-radius: 5px;
 }
+
+main img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+main a{  
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;   
+}
+.center{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
   
 footer {
   background-color: black;
   color: white;
   text-align: center;
   margin-top: 10px;
- 
 }
 .social-icons {
     text-align: center;
