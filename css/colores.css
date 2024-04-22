@@ -1,0 +1,72 @@
+
+main{
+    background-color: #89a1a1;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+main h3{
+    text-align: center;
+    
+    color: rgb(15, 85, 97);
+}
+
+main ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+main ul :last-child{
+    color: rgb(255, 208, 0);
+    /*background-color: #0f3433;*/
+    border-radius: 5px;
+}
+
+main ul :hover{
+    transform: scale(3, 3);
+    transition: all 1s ease-in;
+}
+
+main ul li{       
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 6rem;
+}
+
+main ul li:nth-child(1){   
+    /*background-color: rgb(8, 70, 57);*/
+    color: rgb(217, 162, 11);
+    border-radius: 5px;
+    width: 3rem;
+}
+
+main ul li a{
+    text-decoration: none;
+}
+
+main ul li a:active {
+    background-color: rgb(175, 227, 175); 
+    color: white;
+}
+
+section ul{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gray;
+    color: white;   
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+section ul li a{
+    text-decoration: none;
+}

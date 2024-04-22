@@ -1,0 +1,17 @@
+
+main img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+main a{  
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;   
+}
+
+h3 {
+    text-align: center;
+}
