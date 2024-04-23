@@ -1,22 +1,34 @@
+:root{
+    --color-primario :#03363D;
+    --color-secundario :#174D4D;
+    --color-background :#FFFFFF;
+    --color-alt        :#F8F9F9;
+    --color-nav-princ  :#00CBFF;
+    --color-nav-sec    :#00BFF0;
+    --color-foot-princ :#FF3C32;
+    --color-foot-sec   :#FF2419;
+    --color-texto-princ:#bc8f8f;
+    --color-texto-sec  :#ff5900;
+}
 
 main{
-    background-color: #89a1a1;
+    background-color: var(--color-secundario);/* #89a1a1 */
     margin: 1.5rem;
     padding: 1.5rem;
+    border-radius: 5px;
 }
 
 main h3{
-    text-align: center;
-    
-    color: rgb(15, 85, 97);
+    text-align: center;   
+    color: var(--color-texto-princ);
 }
 
 main ul{
     display: flex;
     flex-direction: column;
     align-items: center;   
-    background-color: gray;
-    color: white;
+    background-color: var(--color-alt);
+    color: var(--color-texto-princ);
     text-decoration: none;
     margin: 1.5rem;
     padding: 1.5rem;
@@ -24,7 +36,7 @@ main ul{
 }
 
 main ul :last-child{
-    color: rgb(255, 208, 0);
+    color: var(--color-texto-sec);
     /*background-color: #0f3433;*/
     border-radius: 5px;
 }
@@ -43,7 +55,7 @@ main ul li{
 
 main ul li:nth-child(1){   
     /*background-color: rgb(8, 70, 57);*/
-    color: rgb(217, 162, 11);
+    color: var(--color-texto-sec);
     border-radius: 5px;
     width: 3rem;
 }
@@ -60,8 +72,8 @@ main ul li a:active {
 section ul{
     display: flex;
     justify-content: space-evenly;
-    background-color: gray;
-    color: white;   
+    background-color: var(--color-secundario);
+    color: var(--color-texto-princ);   
     margin: 1.5rem;
     padding: 1.5rem;
     border-radius: 5px;
@@ -69,4 +81,5 @@ section ul{
 
 section ul li a{
     text-decoration: none;
+    color: var(--color-texto-princ); 
 }
