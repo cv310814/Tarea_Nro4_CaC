@@ -4,98 +4,170 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="css/nav.css"> 
-        <link rel="stylesheet" href="css/form.css">
+        <!--<link rel="stylesheet" href="css/nav.css"> -->
+        <!--<link rel="stylesheet" href="css/form.css">-->
         <link rel="stylesheet" href="css/footer.css">
         <title>La cocina de Juan</title>
     </head>
 
 <body>
     <header>
-        <nav>
-            <a class="nav" href="index.html">Home</a>
-            <a class="nav" href="acercade.html">Acerca de</a>
-            <a class="nav" href="contact.html">Contacto</a>
-            <a class="nav" href="form.html">Registrarse</a>
-            <a class="nav" href="sucursales.html">Sucursales</a>
-            <a class="nav" href="colores.html">Colores</a>
-            <a class="titulo">La cocina de Juan</a>
-        </nav>
-        
+        <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-warning-emphasis " href="#">La cocina de Juan</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">                
+                  <li class="nav-item">
+                    <a class="nav-link text-success link-opacity-25" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="contact.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="sucursales.html">Sucursales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="form.html">Registrarse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="colores.html">Colores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="acercade.html">Acerca de</a>
+                  </li>                 
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
     </header>
 
     <main>
-        <h2>Formulario de registro</h2>
-        <form action="/registro" method="post"> 
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+        <div class="container">
+            <p class="text-center fs-2 fw-semibold">Formulario de registro</p>
 
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required><br>
+            <form class="row g-3" action="/registro" method="post">
 
-            <label for="direccion">Dirección:</label><br>
-        
-            <label for="ciudad">Calle:</label><br>
-            <input type="text" id="calle" name="calle" placeholder="Escribe tu calle">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success-subtle " id="basic-addon1">Nombre</span>
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
+                    <span class="input-group-text bg-success-subtle" id="basic-addon1">Apellido</span>
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" aria-describedby="basic-addon1">
+                </div>
 
-            <label for="ciudad">Número:</label>
-            <input type="text" id="numero" name="numero" placeholder="Escribe tu número">
-            
-            <label for="C.A.B.A.">Ciudad:</label>
-            <input type="text" value="C.A.B.A.">
+                <div class="input-group mb-2">
+                    <span class="input-group-text bg-success-subtle " id="basic-addon1">Contraseña</span>
+                    <input type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon1">
+                    <span class="input-group-text bg-success-subtle" id="basic-addon1">@</span>
+                    <input type="email" class="form-control " placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                    <span class="input-group-text bg-success-subtle" id="basic-addon2">@example.com</span>
+                </div>
 
+                <div>
+                    <label for="text-center" class="form-label">Dirección</label>
+                </div>
 
-            <label for="postal">Código Postal:</label>
-            <input type="text" id="postal" name="postal" placeholder="Escribe tu código postal"><br>
+                <div class="input-group mb-2 col-4 g-2 ">               
+                    <span class="input-group-text bg-success-subtle " id="basic-addon1">Calle</span>             
+                    <input type="text" class="form-control" id="inputCalle" placeholder="Calle">
+                    <span class="input-group-text bg-success-subtle " id="basic-addon1">Número</span>             
+                    <input type="number" class="form-control" id="inputNumero" placeholder="Número">
+                    <span class="input-group-text bg-success-subtle " id="basic-addon1">Ciudad</span>             
+                    <input type="text" class="form-control" id="inputCiudad" placeholder="Ciudad">              
+                </div>
 
-            <label for="telefono">Teléfono:</label><br>
-            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+                <div class="input-group mb-2 col-4 g-2 ">               
+                    <span class="input-group-text bg-success-subtle " id="basic-addon1">Celular</span>             
+                    <input type="number" class="form-control" id="inputCelular" placeholder="Celular">
+                    <span class="input-group-text bg-success-subtle " id="basic-addon1">Fecha Nacimiento</span>             
+                    <input type="date" class="form-control" id="inputFechaNacimiento" placeholder="Fecha Nacimiento">
+                    <span class="input-group-text bg-success-subtle " id="basic-addon1">Codigo Postal</span>             
+                    <input type="number" class="form-control" id="inputCodigoPostal" placeholder="Codigo Postal">
+                </div>
 
-            <label for="fecha-nac">Fecha de Nac.:</label>
-            <input type="date" id="fecha-nac" name="fecha-nac"placeholder="Escribe tu fecha de nacimiento">
+                <div class="input-group mb-2 col-12">               
+                    <span class="input-group-text bg-success-subtle " id="basic-addon1">Estudios</span>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elegir...</option>
+                        <option value="primaria">Primaria</option>
+                        <option value="secundaria">Secundaria</option>
+                        <option value="terciario">Terciario</option>
+                        <option value="universitario">Universitario</option>
+                        <option>...</option>
+                    </select>
+                </div>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+                <div class="row row-cols-2">
+                    <div class="cols-6">
+                        <div>
+                            <label for="text-center" class="form-label">Género</label>
+                        </div>
 
-            <label for="clave">Clave:</label>
-            <input type="password" id="clave" name="clave" required><br>
+                        <div class="input-group cols-4">                
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Femenino</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Masculino</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Otro</label>
+                            </div>
+                        </div>
+                    </div>    
 
-            <label for="Genero">Genero:</label><br>
-            <input type="radio" id="hombre" name="sexo" value="hombre">
-            <label for="hombre">Hombre</label>
-            <input type="radio" id="mujer" name="sexo" value="mujer">
-            <label for="mujer">Mujer</label>
-            <input type="radio" id="otro" name="sexo" value="otro">
-            <label for="otro">Otro</label><br><br>
+                    <div class="cols-6">
 
+                        <div>
+                            <label for="text-center" class="form-label mb-1">Conocimientos previos</label>
+                        </div>
+                    
+                        <div class="input-group col-8">                
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">HTML</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">CSS</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Bootstrap</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Javascript</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Angular</label>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                           
+                <div class="input-group m-2 col-12">
+                    <span class="input-group-text bg-success-subtle">Comentarios</span>
+                    <textarea class="form-control" aria-label="Comentarios"></textarea>
+                </div>
 
-            <label for="conocimientos">Conocimientos previos:</label>
-            <input type="checkbox" id="html" name="conocimientos" value="HTML">
-            <label for="html">HTML</label>
-            <input type="checkbox" id="css" name="conocimientos" value="CSS">
-            <label for="css">CSS</label>
-            <input type="checkbox" id="bootstrap" name="conocimientos" value="Bootstrap">
-            <label for="bootstrap">Bootstrap</label>
-            <input type="checkbox" id="javascript" name="conocimientos" value="Javascript">
-            <label for="javascript">Javascript</label>
-            <input type="checkbox" id="angular" name="conocimientos" value="Angular">
-            <label for="angular">Angular</label><br>
-            <br>
-            <label for="estudios">Estudios:</label>
-            <select id="estudios" name="estudios">
-            <option value="primaria">Primaria</option>
-            <option value="secundaria">Secundaria</option>
-            <option value="terciario">Terciario</option>
-            <option value="universitario">Universitario</option>
-            </select>
-            <br><br>
-            
-            <label for="comentarios">Comentarios:</label><br>
-            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+                <div class="input-group mb-2 col-12 g-2">         
+                    <button type="submit" class="btn btn-outline-success ">Enviar</button>
+                </div>
 
-            <input type="submit" value="Enviar">
-        </form>
+            </form>
+
+        </div>
+       
     </main>
 
     <footer class="center">
@@ -110,5 +182,9 @@
           <p class="copy">Derechos reservados ©2024</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
